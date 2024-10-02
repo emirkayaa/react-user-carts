@@ -13,7 +13,7 @@ function Login() {
         e.preventDefault();
         const action = await dispatch(loginUser({username,password}));
         if (loginUser.fulfilled.match(action)) {
-          navigate('/')
+          navigate('/');
         }
     };
     useEffect(() => {
